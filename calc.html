@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="house2.png">
+            <p class="name">MD Material</p>
+        </div>
+        
+            <a href="house.html">Home</a>
+             <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+               <a href="calc.html">Calculator</a>
+                <a href="material.html">Materials</a>
+        <div class="log">
+            <button><a href="login.html">Login</a></button>
+        </div>                                                     
+    </nav>
+
+    <div class="conainer">
+        <div class="header">
+        <h1>🏠 House Material Calculator</h1>
+        <p class="sub">Calculate approximate construction materials</p>
+       
+        
+
+        <div class="Calculator">
+            <div class="input-box">
+             <label>House length(ft)</label>
+             <input type="number"  placeholder="example:40">
+            </div>
+
+            <div class="input-box">
+                <label>House width(ft)</label>
+                <input  type="number"  placeholder="example: 30">
+            </div>
+
+            <div class="input-box">
+                <label>Wall height (ft)</label>
+                <input type="number"  placeholder="10" value="10">
+            </div>
+
+            <div class="input-box">
+                <label>Wall Thickness (inch)</label>
+                <select id="thickness">
+                    <option value="4.5">4.5 inch</option>
+                    <option value="9">9 inch</option>
+                </select>
+            </div>
+            <button onclick="calculate()" class="cbutton">Calculate Materials</button>
+        </div>
+
+             
+    
+
+        
+        <div id="result" class="result">
+            <h2>Estimated Materials</h2>
+
+            <div class="material">
+                <span>🧱 Bricks</span>
+                <strong id="bricks">0 Nos</strong>
+            </div>
+
+            <div class="material">
+                <span>🪣 Cement</span>
+                <strong id="cement">0 Bags</strong>
+            </div>
+
+            <div class="material">
+                <span>🏖️ Sand</span>
+                <strong id="sand">0 Cu.ft</strong>
+            </div>
+
+            <div class="material">
+                <span>🪨 Aggregate</span>
+                <strong id="aggregate">0 Cu.ft</strong>
+            </div>
+
+            <div class="material">
+                <span>🔩 Steel</span>
+                <strong id="steel">0 Kg</strong>
+            </div>
+
+            <div class="material">
+                <span>🏗️ Concrete</span>
+                <strong id="concrete">0 Cu.ft</strong>
+            </div>
+        </div>
+
+
+        <p class="note">
+            ⚠️ These are approximate estimates. Actual quantities depend on
+            structural design, foundation, soil, slab, openings and engineer specifications.
+        </p>
+
+        </div>
+
+
+    </div>
+      
+        
+</body>
+</html>
